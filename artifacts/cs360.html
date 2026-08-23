@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CS-360 DatabaseHelper | Matthew Bridegroom</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -13,7 +16,7 @@
       <a href="../index.html" class="logo">Matthew <span>Bridegroom</span></a>
       <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
-        <li><a href="../self-assessment.html">Self-Assessment</a></li>
+        <li><a href="../index.html#self-assessment">Self-Assessment</a></li>
         <li><a href="../artifacts.html" class="active">Artifacts</a></li>
         <li><a href="../code-review.html">Code Review</a></li>
       </ul>
@@ -26,13 +29,21 @@
       <h1 class="section-title">DatabaseHelper.java</h1>
       <p class="text-muted mb-4">Core SQLite database helper for an Android calendar/events application. Original created during earlier mobile coursework; significantly enhanced in August 2026 for CS-499.</p>
 
-      <!-- Overview -->
+      <!-- Code Files Section -->
+      <div class="card">
+        <h3>Original & Enhanced Code</h3>
+        <p class="text-muted mb-3">Download or view the full source files used in this artifact.</p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="../files/cs360/DatabaseHelper-Original.java" class="btn" target="_blank">View Original Code</a>
+          <a href="../files/cs360/DatabaseHelper-Enhanced.java" class="btn" target="_blank">View Enhanced Code</a>
+        </div>
+      </div>
+
       <div class="card">
         <h3>Project Overview</h3>
         <p>This class is responsible for creating and managing the users and events tables, handling user authentication, and performing CRUD operations on calendar events. The original version stored passwords in plain text and lacked proper data integrity and resource management. The enhanced version is a secure, professional, and robust database layer.</p>
       </div>
 
-      <!-- Software Design -->
       <div class="card">
         <h3>Software Design & Engineering</h3>
         <ul class="improvement-list">
@@ -43,7 +54,6 @@
         </ul>
       </div>
 
-      <!-- Security -->
       <div class="card">
         <h3>Security Improvements</h3>
         <ul class="improvement-list">
@@ -54,7 +64,6 @@
         </ul>
       </div>
 
-      <!-- Databases -->
       <div class="card">
         <h3>Database Enhancements</h3>
         <ul class="improvement-list">
@@ -65,7 +74,6 @@
         </ul>
       </div>
 
-      <!-- Resource Management & Validation -->
       <div class="card">
         <h3>Resource Management & Input Validation</h3>
         <ul class="improvement-list">
@@ -76,13 +84,11 @@
         </ul>
       </div>
 
-      <!-- Learning -->
       <div class="card">
         <h3>Learning & Reflection</h3>
         <p>Working on this enhancement reinforced the importance of security by design. Small intentional changes—adding salt and hashing, enabling foreign keys, proper resource cleanup—dramatically raised the quality and professionalism of the database code. The main challenge was migrating from a plain-text password schema to a salted-hash approach without breaking existing authentication logic.</p>
       </div>
 
-      <!-- Outcomes -->
       <div class="card">
         <h3>Course Outcomes Demonstrated</h3>
         <ul class="check-list">
@@ -102,4 +108,5 @@
   </footer>
 
 </body>
+</html>
 </html>
