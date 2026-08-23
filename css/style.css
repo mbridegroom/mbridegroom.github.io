@@ -10,11 +10,12 @@
   --bg-card: #132337;
   --bg-elevated: #1B2F4A;
   --royal: #1E4B8C;
-  --gold: #D4AF37;
-  --gold-hover: #E8C547;
+  --gold: #C9A227;          /* True gold (less yellow) */
+  --gold-hover: #D4B03A;
+  --gold-dark: #B8961E;
   --text: #F8FAFC;
   --text-muted: #94A3B8;
-  --border: rgba(212, 175, 55, 0.18);
+  --border: rgba(201, 162, 39, 0.22);
 }
 
 html {
@@ -165,14 +166,14 @@ img {
   letter-spacing: 0.8px;
   font-size: 0.875rem;
   transition: all 0.25s ease;
-  box-shadow: 0 4px 14px rgba(212, 175, 55, 0.3);
+  box-shadow: 0 4px 14px rgba(201, 162, 39, 0.35);
 }
 
 .btn:hover {
   background: var(--gold-hover);
   color: #0A1628;
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
+  box-shadow: 0 8px 20px rgba(201, 162, 39, 0.45);
 }
 
 /* ===== SECTIONS ===== */
@@ -211,7 +212,7 @@ section {
 }
 
 .card:hover {
-  border-color: rgba(212, 175, 55, 0.35);
+  border-color: rgba(201, 162, 39, 0.4);
 }
 
 .card h3 {
@@ -267,7 +268,7 @@ section {
 
 .artifact-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(212, 175, 55, 0.4);
+  border-color: rgba(201, 162, 39, 0.45);
   box-shadow: 0 15px 35px -12px rgba(0, 0, 0, 0.5);
 }
 
