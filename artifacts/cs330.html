@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CS-330 SceneManager | Matthew Bridegroom</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -13,7 +16,7 @@
       <a href="../index.html" class="logo">Matthew <span>Bridegroom</span></a>
       <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
-        <li><a href="../self-assessment.html">Self-Assessment</a></li>
+        <li><a href="../index.html#self-assessment">Self-Assessment</a></li>
         <li><a href="../artifacts.html" class="active">Artifacts</a></li>
         <li><a href="../code-review.html">Code Review</a></li>
       </ul>
@@ -25,6 +28,16 @@
       <div class="course text-gold mb-1">CS-330 • Computational Graphics and Visualization</div>
       <h1 class="section-title">SceneManager.cpp</h1>
       <p class="text-muted mb-4">Core class responsible for loading textures, defining materials, setting up lighting, and rendering a complete 3D scene. Original created November 2023; significantly refactored in August 2026 for CS-499.</p>
+
+      <!-- Code Files Section -->
+      <div class="card">
+        <h3>Original & Enhanced Code</h3>
+        <p class="text-muted mb-3">Download or view the full source files used in this artifact.</p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="../files/cs330/SceneManager-Original.cpp" class="btn" target="_blank">View Original Code</a>
+          <a href="../files/cs330/SceneManager-Enhanced.cpp" class="btn" target="_blank">View Enhanced Code</a>
+        </div>
+      </div>
 
       <div class="card">
         <h3>Project Overview</h3>
@@ -53,7 +66,7 @@
 
       <div class="card">
         <h3>Learning & Reflection</h3>
-        <p>This enhancement highlighted the power of data-driven design. Shifting from hardcoded logic to structured data dramatically improved flexibility and maintainability. The main challenge was refactoring the complex RenderScene function without breaking visual output or the precise positioning and rotation of scene elements (especially the rocket, tower, and legs). Several iterations were required to achieve both cleanliness and visual fidelity.</p>
+        <p>This enhancement highlighted the power of data-driven design. Shifting from hardcoded logic to structured data dramatically improved flexibility and maintainability. The main challenge was refactoring the complex RenderScene function without breaking visual output or the precise positioning and rotation of scene elements (especially the rocket, tower, and legs).</p>
       </div>
 
       <div class="card">
