@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS-330 SceneManager | Matthew Bridegroom</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
 
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">Matthew <span>Bridegroom</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../self-assessment.html">Self-Assessment</a></li>
+        <li><a href="../artifacts.html" class="active">Artifacts</a></li>
+        <li><a href="../code-review.html">Code Review</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container">
+      <div class="course text-gold mb-1">CS-330 • Computational Graphics and Visualization</div>
+      <h1 class="section-title">SceneManager.cpp</h1>
+      <p class="text-muted mb-4">Core class responsible for loading textures, defining materials, setting up lighting, and rendering a complete 3D scene. Original created November 2023; significantly refactored in August 2026 for CS-499.</p>
+
+      <div class="card">
+        <h3>Project Overview</h3>
+        <p>The original implementation contained over 350 lines of repetitive transformation, texture, material, and draw calls inside the RenderScene function. The enhanced version uses a data-driven approach that reduces duplication while preserving visual quality and making the system far easier to modify and extend.</p>
+      </div>
+
+      <div class="card">
+        <h3>Software Design & Engineering</h3>
+        <ul class="improvement-list">
+          <li>Transformed hardcoded repetitive code into clean structured data</li>
+          <li>Made the entire scene configurable and readable</li>
+          <li>Easier modification without touching rendering logic</li>
+          <li>Strong foundation for future features</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Algorithms & Data Structures</h3>
+        <ul class="improvement-list">
+          <li>Replaced 6 nearly identical code blocks (80+ lines) with compact data</li>
+          <li>Dynamic object creation – adding/removing objects requires almost no extra code</li>
+          <li>Data-driven render loop reduced RenderScene from ~350 lines to ~8 lines</li>
+          <li>Texture lookup changed from O(n) linear search to O(1) hashmap lookup</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Learning & Reflection</h3>
+        <p>This enhancement highlighted the power of data-driven design. Shifting from hardcoded logic to structured data dramatically improved flexibility and maintainability. The main challenge was refactoring the complex RenderScene function without breaking visual output or the precise positioning and rotation of scene elements (especially the rocket, tower, and legs). Several iterations were required to achieve both cleanliness and visual fidelity.</p>
+      </div>
+
+      <div class="card">
+        <h3>Course Outcomes Demonstrated</h3>
+        <ul class="check-list">
+          <li>Application of advanced data structures</li>
+          <li>Implementation of software design best practices</li>
+          <li>Code refactoring and clean, maintainable code</li>
+          <li>Graphics programming proficiency</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Matthew Bridegroom • Southern New Hampshire University • CS-499 Capstone</p>
+    </div>
+  </footer>
+
+</body>
+</html>
