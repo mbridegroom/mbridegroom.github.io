@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Professional Self-Assessment | Matthew Bridegroom</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -23,37 +26,98 @@
   <section>
     <div class="container">
       <h1 class="section-title">Professional Self-Assessment</h1>
+      <p class="text-muted mb-4">
+        A reflection on the technical skills, professional competencies, and personal growth developed throughout the Computer Science program at Southern New Hampshire University, with a focus on game development.
+      </p>
 
+      <!-- Introduction -->
       <div class="card">
-        <p class="text-muted mb-3"><em>Placeholder.</em></p>
-
-        <h3>Collaborating in a Team Environment</h3>
-        <p>[Your content]</p>
-
-        <h3 class="mt-4">Communicating with Stakeholders</h3>
-        <p>[Your content]</p>
-
-        <h3 class="mt-4">Data Structures & Algorithms</h3>
-        <p>[Your content]</p>
-
-        <h3 class="mt-4">Software Engineering</h3>
-        <p>[Your content]</p>
-
-        <h3 class="mt-4">Databases</h3>
-        <p>[Your content]</p>
-
-        <h3 class="mt-4">Security</h3>
-        <p>[Your content]</p>
-
-        <h3 class="mt-4">How the CS Program Prepared Me for Employment</h3>
-        <p>[Your content]</p>
-
-        <h3 class="mt-4">Game-Development Specialization</h3>
-        <p>[Your content]</p>
-
-        <h3 class="mt-4">Additional Projects & Courses</h3>
-        <p>[Your content]</p>
+        <h3>Introduction</h3>
+        <p>
+          Throughout my time in the Computer Science program at Southern New Hampshire University, I have grown from a student focused on completing individual assignments into a developer who understands how to design, secure, and maintain real software systems. The combination of core computer science courses and my game-development specialization has given me both the technical foundation and the practical experience needed to contribute in professional environments. This self-assessment reflects on the key competencies I have developed and how they prepare me for employment.
+        </p>
       </div>
+
+      <!-- Collaboration -->
+      <div class="card">
+        <h3>Collaborating in a Team Environment</h3>
+        <p>
+          Many of my projects required working with others, whether through shared code repositories, coordinated design decisions, or integrating systems created by different team members. In my Unreal Engine coursework (GAM-312), I learned the importance of clear communication and modular design so that systems such as player movement, building placement, and UI could be developed in parallel without breaking each other. I also practiced using version control effectively, writing clear commit messages, and reviewing code changes. These experiences taught me that successful collaboration depends as much on communication and process as it does on technical skill.
+        </p>
+      </div>
+
+      <!-- Communication -->
+      <div class="card">
+        <h3>Communicating with Stakeholders</h3>
+        <p>
+          Through project presentations, code reviews, and written documentation, I have learned how to explain technical decisions to both technical and non-technical audiences. When enhancing my artifacts for the capstone, I focused on clearly documenting why specific improvements were made—whether it was adding salted password hashing for security or converting a hardcoded rendering system into a data-driven architecture. Being able to articulate the reasoning behind design choices is a skill I will continue to strengthen as I move into professional roles.
+        </p>
+      </div>
+
+      <!-- Data Structures & Algorithms -->
+      <div class="card">
+        <h3>Data Structures and Algorithms</h3>
+        <p>
+          My strongest demonstration of data structures and algorithms appears in the CS-330 SceneManager enhancement. The original implementation relied on repetitive, hardcoded logic that was difficult to maintain. I refactored it into a data-driven system using structured objects and an efficient texture lookup (moving from O(n) linear search to O(1) hashmap access). In the GAM-312 Unreal project, I also refined algorithmic systems such as line traces, grid snapping, and collision checks. These experiences reinforced the value of choosing the right data structure and keeping algorithms clean and efficient.
+        </p>
+      </div>
+
+      <!-- Software Engineering -->
+      <div class="card">
+        <h3>Software Engineering</h3>
+        <p>
+          Across all three capstone artifacts I focused heavily on software engineering best practices: separation of concerns, reducing code duplication, improving readability, and making systems easier to extend. In the Unreal player class I extracted complex logic out of the Tick function and broke large methods into smaller, focused helpers. In the SceneManager I replaced hundreds of lines of repetitive code with a clean data-driven loop. These changes taught me that well-structured code is not only easier to maintain—it is also easier to debug, test, and expand.
+        </p>
+      </div>
+
+      <!-- Databases -->
+      <div class="card">
+        <h3>Databases</h3>
+        <p>
+          The CS-360 DatabaseHelper artifact provided direct experience designing and improving a relational database layer. I added foreign key constraints with cascading deletes, created indexes for performance, and ensured proper resource management of database cursors. These improvements moved the original implementation from a basic functional helper into a more professional and production-ready data access layer. I now understand the importance of data integrity, performance considerations, and clean database interaction patterns.
+        </p>
+      </div>
+
+      <!-- Security -->
+      <div class="card">
+        <h3>Security</h3>
+        <p>
+          Security was a major focus of my CS-360 enhancement. The original application stored passwords in plain text. I replaced that approach with salted SHA-256 hashing and added input validation to reduce the risk of bad data entering the system. This work reinforced a security-by-design mindset: security should not be an afterthought but an integral part of how systems are built. I also gained a clearer understanding of how small, intentional changes can significantly improve the overall security posture of an application.
+        </p>
+      </div>
+
+      <!-- Preparation for Employment -->
+      <div class="card">
+        <h3>How the CS Program Prepared Me for Employment</h3>
+        <p>
+          The Computer Science program at SNHU has prepared me for employment by combining strong theoretical foundations with repeated opportunities to apply those concepts in realistic projects. Courses in data structures, software engineering, databases, and security gave me the technical knowledge expected of junior developers. The game-development specialization allowed me to apply those same principles inside complex engines such as Unreal Engine 5. Most importantly, the capstone process of revisiting earlier work, identifying weaknesses, and deliberately improving it has taught me how professional developers continuously refine their code and skills.
+        </p>
+      </div>
+
+      <!-- Game Development Specialization -->
+      <div class="card">
+        <h3>Game-Development Specialization</h3>
+        <p>
+          My specialization in game development has been one of the most valuable parts of the program. Working in Unreal Engine taught me how to design systems that must perform in real time, manage complex object interactions, and remain maintainable as features grow. Projects such as the survival game player class required me to think about frame-rate impact, modular design, and the integration of multiple systems (movement, building, vitals, and UI). These experiences have given me practical insight into the unique challenges of game programming while still reinforcing the same software engineering principles used in other domains.
+        </p>
+      </div>
+
+      <!-- Additional Projects -->
+      <div class="card">
+        <h3>Additional Projects and Courses</h3>
+        <p>
+          Beyond the three artifacts presented in this portfolio, I have completed coursework and projects in computer graphics, mobile development, object-oriented programming, and software testing. Each of these experiences contributed to a broader understanding of the software development lifecycle. Looking forward, I plan to continue building personal projects that combine my interest in game development with the secure, well-structured coding practices I refined during the capstone.
+        </p>
+      </div>
+
+      <!-- Closing -->
+      <div class="card">
+        <h3>Closing Reflection</h3>
+        <p>
+          Completing this ePortfolio has given me a clear view of how far I have progressed. The ability to look back at earlier work, identify its shortcomings, and intentionally improve it is a skill I will carry into my professional career. I am confident that the combination of technical knowledge, practical experience, and a commitment to continuous improvement has prepared me to contribute effectively as a software developer, particularly in roles that involve game systems, interactive applications, or secure software design.
+        </p>
+      </div>
+
     </div>
   </section>
 
