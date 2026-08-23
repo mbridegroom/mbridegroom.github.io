@@ -27,12 +27,14 @@
     <div class="container">
       <div class="course text-gold mb-1">GAM-312 • Unreal Engine</div>
       <h1 class="section-title">Core Player Class (UE5 Survival Game)</h1>
-      <p class="text-muted mb-4">Core class handling player movement, building, hunger, health, and UI integration in an Unreal Engine 5 survival game. Created around May 2026 and enhanced for the CS-499 portfolio.</p>
+      <p class="text-muted mb-4">
+        This artifact is the core class behind an Unreal Engine 5 survival game. The purpose of this class is to handle player movement and interaction within the game, including systems like building, hunger, health, and integration with UI elements. This file was created during my GAM-312 class around May 2026 and later enhanced for the CS-499 portfolio.
+      </p>
 
-      <!-- Code Files Section -->
+      <!-- Code Files -->
       <div class="card">
         <h3>Original & Enhanced Code</h3>
-        <p class="text-muted mb-3">Download or view the full source files used in this artifact.</p>
+        <p class="text-muted mb-3">View or download the full source files.</p>
         <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
           <a href="../files/gam312/PlayerClass-Original.cpp" class="btn" target="_blank">View Original Code</a>
           <a href="../files/gam312/PlayerClass-Enhanced.cpp" class="btn" target="_blank">View Enhanced Code</a>
@@ -40,34 +42,52 @@
       </div>
 
       <div class="card">
-        <h3>Project Overview</h3>
-        <p>This class manages complex player systems including building placement (line traces, grid snapping, overlap collision), resource interaction, and vital stats. The original version mixed multiple responsibilities inside large functions such as Tick() and FindObject(). The enhanced version applies clear separation of concerns and algorithmic refinements.</p>
+        <h3>Why This Artifact Was Selected</h3>
+        <p>
+          I chose this artifact because it demonstrates key components of software design and engineering. It showcases a complex class with multiple responsibilities and involves algorithmic design in areas such as line traces, grid snapping, and overlap collision queries. The enhancements demonstrate improved use of algorithmic principles and software engineering practices by creating a more modular, maintainable, and readable codebase.
+        </p>
       </div>
 
       <div class="card">
-        <h3>Software Design & Engineering</h3>
+        <h3>Key Code Improvements</h3>
+
+        <h4 class="text-gold mb-2">Refactored Building Placement</h4>
         <ul class="improvement-list">
-          <li>Moved complex building preview logic out of Tick()</li>
-          <li>Created dedicated functions with clear steps: line trace → grid snap → collision check</li>
-          <li>Broke FindObject() into smaller focused helpers</li>
-          <li>Centralized default values in the constructor</li>
-          <li>Improved null checks and overall readability</li>
+          <li>Moved the complex building preview logic outside of the Tick function</li>
+          <li>Created a new dedicated function for the building preview</li>
+          <li>Created clear steps between the line trace, grid snap, and collision check</li>
+          <li>Reduced the amount of unnecessary work performed every frame</li>
+          <li>Added more null checks</li>
         </ul>
-      </div>
 
-      <div class="card">
-        <h3>Algorithms & Data Structures</h3>
+        <h4 class="text-gold mb-2 mt-4">FindObject() Refactor</h4>
         <ul class="improvement-list">
-          <li>Refined line traces, sweeps, and grid-snapping logic</li>
+          <li>Broke down the larger function into smaller helper functions</li>
           <li>Separated resource harvesting logic from building logic</li>
-          <li>Replaced manual if-statements for stamina/health with proper clamping (0–100)</li>
-          <li>Reduced unnecessary work performed every frame</li>
+          <li>Improved readability and maintainability</li>
+          <li>Removed duplicate code</li>
+        </ul>
+
+        <h4 class="text-gold mb-2 mt-4">Default Values Setup</h4>
+        <ul class="improvement-list">
+          <li>Centered the default values into one place within the constructor</li>
+          <li>Set up default values for player stats, traces, and grid sizes</li>
+          <li>Removed unneeded resource variables</li>
+        </ul>
+
+        <h4 class="text-gold mb-2 mt-4">Better Stamina/Health Clamping</h4>
+        <ul class="improvement-list">
+          <li>Made sure values could not go below 0 or above 100</li>
+          <li>Replaced manual if statements with clamps</li>
+          <li>Improved readability of player stats while reducing the risk of bugs</li>
         </ul>
       </div>
 
       <div class="card">
-        <h3>Learning & Reflection</h3>
-        <p>The key lesson was the importance of separation of concerns. Functions such as Tick() and FindObject() were doing too much. Breaking them into smaller, focused functions improved readability and maintainability. A major challenge was ensuring changes remained compatible with existing classes and blueprints while still making the code more maintainable.</p>
+        <h3>Reflection</h3>
+        <p>
+          One key lesson was the importance of separation of concerns. Functions such as Tick() and FindObject() were doing too much. I separated these into smaller, more focused functions that improved readability and maintainability. A major challenge was ensuring that the changes remained compatible with the existing classes and blueprints within the game while still making the code more maintainable.
+        </p>
       </div>
 
       <div class="card">
