@@ -1,119 +1,72 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artifacts | Matthew Bridegroom</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artifacts | Matthew Bridegroom</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<header>
-    <div class="container nav-container">
-        <a href="index.html" class="logo">Matthew Bridegroom</a>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="artifacts.html" class="active">Artifacts</a>
-            <a href="code-review.html">Code Review</a>
-            <a href="resume.html">Resume</a>
-            <a href="about.html">About</a>
-        </nav>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Matthew <span>Bridegroom</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="self-assessment.html">Self-Assessment</a></li>
+        <li><a href="artifacts.html" class="active">Artifacts</a></li>
+        <li><a href="code-review.html">Code Review</a></li>
+      </ul>
     </div>
-</header>
+  </nav>
 
-<main>
-
-<section class="page-header">
+  <section>
     <div class="container">
-        <p class="eyebrow">Computer Science Portfolio</p>
-        <h1>Featured Artifacts</h1>
-        <p>
-            These projects represent my growth throughout the Computer Science
-            program and demonstrate my experience with software engineering,
-            algorithms and data structures, databases, and application
-            development.
-        </p>
-    </div>
-</section>
+      <h1 class="section-title">Capstone Artifacts</h1>
+      <p class="text-muted mb-4">Three projects enhanced during CS-499 that demonstrate growth in software design, algorithms, databases, security, and graphics programming.</p>
 
-
-<section class="section">
-    <div class="container">
-
-        <div class="artifact-grid">
-
-            <article class="artifact-card">
-
-                <div class="artifact-number">01</div>
-
-                <p class="eyebrow">CS-330</p>
-
-                <h2>Computational Graphics and Visualization</h2>
-
-                <p>
-                    An enhanced C++ graphics project demonstrating software
-                    engineering, data-driven design, algorithmic improvements,
-                    and scalable code organization.
-                </p>
-
-                <div class="tags">
-                    <span>C++</span>
-                    <span>OpenGL</span>
-                    <span>Algorithms</span>
-                    <span>Software Engineering</span>
-                </div>
-
-                <a href="artifacts/cs330.html" class="button">
-                    View Artifact
-                </a>
-
-            </article>
-
-
-            <article class="artifact-card">
-
-                <div class="artifact-number">02</div>
-
-                <p class="eyebrow">CS-360</p>
-
-                <h2>Mobile Architecture and Programming</h2>
-
-                <p>
-                    A mobile application demonstrating application
-                    architecture, user interface development, data management,
-                    and database integration.
-                </p>
-
-                <div class="tags">
-                    <span>Java</span>
-                    <span>Android</span>
-                    <span>SQLite</span>
-                    <span>UI Design</span>
-                </div>
-
-                <a href="artifacts/cs360.html" class="button">
-                    View Artifact
-                </a>
-
-            </article>
-
+      <div class="grid-3">
+        <!-- CS-360 -->
+        <div class="artifact-card">
+          <div class="card-body">
+            <div class="course">CS-360</div>
+            <h3>DatabaseHelper.java</h3>
+            <p>Android SQLite helper refactored with salted hashing, foreign keys, proper resource management, and input validation.</p>
+            <a href="artifacts/artifact-cs360.html" class="btn">View Artifact</a>
+          </div>
         </div>
 
+        <!-- CS-330 -->
+        <div class="artifact-card">
+          <div class="card-body">
+            <div class="course">CS-330</div>
+            <h3>SceneManager.cpp</h3>
+            <p>3D graphics scene system transformed from hardcoded repetitive code into a clean, data-driven architecture.</p>
+            <a href="artifacts/artifact-cs330.html" class="btn">View Artifact</a>
+          </div>
+        </div>
+
+        <!-- GAM-312 -->
+        <div class="artifact-card">
+          <div class="card-body">
+            <div class="course">GAM-312</div>
+            <h3>Unreal Player Class</h3>
+            <p>Core survival-game player systems refactored for separation of concerns, clearer algorithms, and better maintainability.</p>
+            <a href="artifacts/artifact-gam312.html" class="btn">View Artifact</a>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-</main>
-
-<footer>
+  <footer>
     <div class="container">
-        <p>Matthew Bridegroom | Computer Science | Southern New Hampshire University</p>
+      <p>© 2026 Matthew Bridegroom • Southern New Hampshire University • CS-499 Capstone</p>
     </div>
-</footer>
+  </footer>
 
 </body>
+</html>
 </html>
 ```
 
