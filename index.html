@@ -1,632 +1,67 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Matthew Bridegroom | Computer Science</title>
-
-    <link rel="stylesheet" href="css/style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matthew Bridegroom | Computer Science Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<!-- NAVIGATION -->
-
-<header class="navbar">
-
-    <div class="nav-container">
-
-        <a href="index.html" class="brand">
-            <span class="brand-mark">MB</span>
-
-            <span class="brand-text">
-                <strong>MATTHEW BRIDEGROOM</strong>
-                <small>COMPUTER SCIENCE</small>
-            </span>
-        </a>
-
-        <nav class="navigation">
-
-            <a href="index.html" class="active">Home</a>
-
-            <a href="artifacts.html">Portfolio</a>
-
-            <a href="code-review.html">Code Review</a>
-
-            <a href="resume.html">Resume</a>
-
-            <a href="about.html">About</a>
-
-        </nav>
-
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Matthew <span>Bridegroom</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="self-assessment.html">Self-Assessment</a></li>
+        <li><a href="artifacts.html">Artifacts</a></li>
+        <li><a href="code-review.html">Code Review</a></li>
+      </ul>
     </div>
+  </nav>
 
-</header>
-
-
-<!-- HERO -->
-
-<main>
-
-<section class="hero">
-
-    <div class="hero-grid"></div>
-
-    <div class="hero-glow"></div>
-
-    <div class="container hero-container">
-
-        <div class="hero-content">
-
-            <div class="hero-label">
-                <span></span>
-                COMPUTER SCIENCE • GAME DEVELOPMENT
-            </div>
-
-            <h1>
-                Building
-                <span>Systems.</span>
-                Creating
-                <span>Experiences.</span>
-            </h1>
-
-            <p class="hero-description">
-
-                Computer Science graduate focused on game development,
-                software engineering, graphics programming, algorithms,
-                and interactive applications.
-
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="artifacts.html" class="gold-button">
-                    Explore My Work
-                    <span>→</span>
-                </a>
-
-                <a href="about.html" class="outline-button">
-                    About Me
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <div class="hero-visual">
-
-            <div class="code-window">
-
-                <div class="window-header">
-
-                    <div class="window-dots">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                    </div>
-
-                    <span>SceneManager.cpp</span>
-
-                </div>
-
-                <div class="code-content">
-
-                    <p>
-                        <span class="code-number">01</span>
-                        <span class="code-keyword">struct</span>
-                        <span class="code-white"> SceneObject</span>
-                    </p>
-
-                    <p>
-                        <span class="code-number">02</span>
-                        <span class="code-white">{</span>
-                    </p>
-
-                    <p>
-                        <span class="code-number">03</span>
-                        <span class="code-type">    glm::vec3</span>
-                        <span class="code-white"> position;</span>
-                    </p>
-
-                    <p>
-                        <span class="code-number">04</span>
-                        <span class="code-type">    glm::vec3</span>
-                        <span class="code-white"> scale;</span>
-                    </p>
-
-                    <p>
-                        <span class="code-number">05</span>
-                        <span class="code-type">    std::string</span>
-                        <span class="code-white"> texture;</span>
-                    </p>
-
-                    <p>
-                        <span class="code-number">06</span>
-                        <span class="code-white">};</span>
-                    </p>
-
-                    <br>
-
-                    <p>
-                        <span class="code-number">08</span>
-                        <span class="code-keyword">std::unordered_map</span>
-                    </p>
-
-                    <p>
-                        <span class="code-number">09</span>
-                        <span class="code-white">    textureMap;</span>
-                    </p>
-
-                    <p>
-                        <span class="code-number">10</span>
-                        <span class="code-comment">// efficient lookup</span>
-                    </p>
-
-                </div>
-
-                <div class="code-status">
-
-                    <span class="status-dot"></span>
-
-                    <span>BUILD SUCCESSFUL</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- STATS -->
-
-<section class="stats-section">
-
-    <div class="container stats-grid">
-
-        <div class="stat">
-
-            <strong>CS</strong>
-
-            <span>Computer Science</span>
-
-        </div>
-
-        <div class="stat">
-
-            <strong>C++</strong>
-
-            <span>Software Development</span>
-
-        </div>
-
-        <div class="stat">
-
-            <strong>UE5</strong>
-
-            <span>Game Development</span>
-
-        </div>
-
-        <div class="stat">
-
-            <strong>SQL</strong>
-
-            <span>Database Development</span>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- FEATURED WORK -->
-
-<section class="section">
-
+  <!-- Hero -->
+  <header class="hero">
     <div class="container">
-
-        <div class="section-header">
-
-            <div>
-
-                <div class="section-label">
-                    01 / SELECTED WORK
-                </div>
-
-                <h2>
-                    Featured <span>Projects</span>
-                </h2>
-
-            </div>
-
-            <a href="artifacts.html" class="text-link">
-                View All Projects →
-            </a>
-
-        </div>
-
-
-        <div class="project-grid">
-
-
-            <!-- PROJECT ONE -->
-
-            <a href="artifacts/cs330.html" class="project-card project-large">
-
-                <div class="project-image graphics-project">
-
-                    <div class="project-overlay"></div>
-
-                    <div class="project-scene">
-
-                        <div class="scene-grid"></div>
-
-                        <div class="scene-object object-one"></div>
-
-                        <div class="scene-object object-two"></div>
-
-                        <div class="scene-object object-three"></div>
-
-                    </div>
-
-                    <div class="project-number">
-                        01
-                    </div>
-
-                </div>
-
-                <div class="project-info">
-
-                    <div class="project-meta">
-                        CS-330 / COMPUTATIONAL GRAPHICS
-                    </div>
-
-                    <h3>
-                        Computational Graphics
-                        <span>& Visualization</span>
-                    </h3>
-
-                    <p>
-                        Enhanced C++ graphics application demonstrating
-                        data-driven design, improved algorithms, and
-                        scalable software architecture.
-                    </p>
-
-                    <div class="project-tags">
-
-                        <span>C++</span>
-                        <span>OpenGL</span>
-                        <span>Algorithms</span>
-                        <span>Software Engineering</span>
-
-                    </div>
-
-                </div>
-
-            </a>
-
-
-            <!-- PROJECT TWO -->
-
-            <a href="artifacts/cs360.html" class="project-card">
-
-                <div class="project-image mobile-project">
-
-                    <div class="phone">
-
-                        <div class="phone-screen">
-
-                            <div class="phone-top"></div>
-
-                            <div class="phone-card"></div>
-
-                            <div class="phone-card"></div>
-
-                            <div class="phone-card small"></div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="project-number">
-                        02
-                    </div>
-
-                </div>
-
-                <div class="project-info">
-
-                    <div class="project-meta">
-                        CS-360 / MOBILE ARCHITECTURE
-                    </div>
-
-                    <h3>
-                        Mobile Application
-                    </h3>
-
-                    <p>
-                        Android application demonstrating application
-                        architecture, interface design, and persistent
-                        data management.
-                    </p>
-
-                    <div class="project-tags">
-
-                        <span>Java</span>
-                        <span>Android</span>
-                        <span>SQLite</span>
-
-                    </div>
-
-                </div>
-
-            </a>
-
-
-        </div>
-
+      <h1>Matthew Bridegroom</h1>
+      <p class="subtitle">Computer Science • Game Development</p>
+      <p class="tagline">Building Systems.<br>Creating Experiences.</p>
+      <a href="artifacts.html" class="btn">View My Portfolio</a>
     </div>
+  </header>
 
-</section>
-
-
-<!-- SPECIALIZATION -->
-
-<section class="specialization-section">
-
+  <!-- Quick Overview -->
+  <section>
     <div class="container">
-
-        <div class="section-label">
-            02 / TECHNICAL EXPERTISE
+      <div class="grid-3">
+        <div class="card">
+          <h3>Professional Self-Assessment</h3>
+          <p class="text-muted">A reflection on collaboration, communication, technical skills, and how the CS program prepared me for a career in software and game development.</p>
+          <a href="self-assessment.html">Read Full Assessment →</a>
         </div>
-
-        <h2>
-            Designed for
-            <span>Complex Problems.</span>
-        </h2>
-
-        <p class="section-intro">
-
-            My Computer Science education has given me experience across
-            multiple areas of software development. My primary interest is
-            game development, but the underlying skills extend across
-            software engineering, algorithms, databases, and security.
-
-        </p>
-
-
-        <div class="expertise-grid">
-
-
-            <div class="expertise-card">
-
-                <div class="expertise-icon">
-                    &lt;/&gt;
-                </div>
-
-                <h3>
-                    Software
-                    <span>Engineering</span>
-                </h3>
-
-                <p>
-                    Designing maintainable, scalable software using
-                    object-oriented programming and modern development
-                    practices.
-                </p>
-
-                <div class="expertise-line"></div>
-
-            </div>
-
-
-            <div class="expertise-card">
-
-                <div class="expertise-icon">
-                    λ
-                </div>
-
-                <h3>
-                    Algorithms &
-                    <span>Data Structures</span>
-                </h3>
-
-                <p>
-                    Selecting appropriate data structures and algorithms
-                    to improve efficiency and solve computing problems.
-                </p>
-
-                <div class="expertise-line"></div>
-
-            </div>
-
-
-            <div class="expertise-card">
-
-                <div class="expertise-icon">
-                    DB
-                </div>
-
-                <h3>
-                    Databases &
-                    <span>Data</span>
-                </h3>
-
-                <p>
-                    Designing applications that store, retrieve, and
-                    manage persistent information effectively.
-                </p>
-
-                <div class="expertise-line"></div>
-
-            </div>
-
-
-            <div class="expertise-card">
-
-                <div class="expertise-icon">
-                    ⚿
-                </div>
-
-                <h3>
-                    Security &
-                    <span>Reliability</span>
-                </h3>
-
-                <p>
-                    Considering vulnerabilities, data protection, and
-                    adversarial threats throughout the development process.
-                </p>
-
-                <div class="expertise-line"></div>
-
-            </div>
-
-
+        <div class="card">
+          <h3>Capstone Artifacts</h3>
+          <p class="text-muted">Three enhanced projects demonstrating growth in software design, algorithms, databases, security, and 3D graphics.</p>
+          <a href="artifacts.html">Explore Artifacts →</a>
         </div>
-
+        <div class="card">
+          <h3>Code Review</h3>
+          <p class="text-muted">Informal code review video analyzing existing functionality, identifying improvements, and aligning with course outcomes.</p>
+          <a href="code-review.html">Watch Code Review →</a>
+        </div>
+      </div>
     </div>
+  </section>
 
-</section>
-
-
-<!-- SELF ASSESSMENT PREVIEW -->
-
-<section class="assessment-section">
-
-    <div class="container assessment-container">
-
-        <div class="assessment-label">
-            03 / PROFESSIONAL PROFILE
-        </div>
-
-        <div class="assessment-content">
-
-            <div>
-
-                <h2>
-                    From Student
-                    <span>to Developer.</span>
-                </h2>
-
-            </div>
-
-            <div>
-
-                <p>
-                    Throughout the Computer Science program at Southern
-                    New Hampshire University, I developed a broad technical
-                    foundation while focusing my education toward game
-                    development and interactive software.
-                </p>
-
-                <p>
-                    My portfolio demonstrates not only the projects I
-                    completed, but how I learned to evaluate, improve, and
-                    communicate the software I created.
-                </p>
-
-                <a href="about.html" class="gold-text-link">
-                    Read My Professional Self-Assessment →
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- CTA -->
-
-<section class="cta-section">
-
+  <footer>
     <div class="container">
-
-        <div class="cta-box">
-
-            <div>
-
-                <div class="section-label">
-                    LET'S CONNECT
-                </div>
-
-                <h2>
-                    Interested in
-                    <span>my work?</span>
-                </h2>
-
-            </div>
-
-            <a href="resume.html" class="gold-button">
-                View Resume
-                <span>→</span>
-            </a>
-
-        </div>
-
+      <p>© 2026 Matthew Bridegroom • Southern New Hampshire University • CS-499 Capstone</p>
     </div>
-
-</section>
-
-</main>
-
-
-<!-- FOOTER -->
-
-<footer>
-
-    <div class="container footer-container">
-
-        <div class="footer-brand">
-
-            <strong>MATTHEW BRIDEGROOM</strong>
-
-            <span>COMPUTER SCIENCE • GAME DEVELOPMENT</span>
-
-        </div>
-
-        <div class="footer-links">
-
-            <a href="index.html">Home</a>
-            <a href="artifacts.html">Portfolio</a>
-            <a href="code-review.html">Code Review</a>
-            <a href="resume.html">Resume</a>
-
-        </div>
-
-        <div class="footer-bottom">
-
-            <span>© 2026 Matthew Bridegroom</span>
-
-            <span>Southern New Hampshire University</span>
-
-        </div>
-
-    </div>
-
-</footer>
-
+  </footer>
 
 </body>
 </html>
-```
-
 </body>
 </html>
 ```
