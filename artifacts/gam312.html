@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAM-312 Unreal Player Class | Matthew Bridegroom</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
 
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">Matthew <span>Bridegroom</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../self-assessment.html">Self-Assessment</a></li>
+        <li><a href="../artifacts.html" class="active">Artifacts</a></li>
+        <li><a href="../code-review.html">Code Review</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container">
+      <div class="course text-gold mb-1">GAM-312 • Unreal Engine</div>
+      <h1 class="section-title">Core Player Class (UE5 Survival Game)</h1>
+      <p class="text-muted mb-4">Core class handling player movement, building, hunger, health, and UI integration in an Unreal Engine 5 survival game. Created around May 2026 and enhanced for the CS-499 portfolio.</p>
+
+      <div class="card">
+        <h3>Project Overview</h3>
+        <p>This class manages complex player systems including building placement (line traces, grid snapping, overlap collision), resource interaction, and vital stats. The original version mixed multiple responsibilities inside large functions such as Tick() and FindObject(). The enhanced version applies clear separation of concerns and algorithmic refinements.</p>
+      </div>
+
+      <div class="card">
+        <h3>Software Design & Engineering</h3>
+        <ul class="improvement-list">
+          <li>Moved complex building preview logic out of Tick()</li>
+          <li>Created dedicated functions with clear steps: line trace → grid snap → collision check</li>
+          <li>Broke FindObject() into smaller focused helpers</li>
+          <li>Centralized default values in the constructor</li>
+          <li>Improved null checks and overall readability</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Algorithms & Data Structures</h3>
+        <ul class="improvement-list">
+          <li>Refined line traces, sweeps, and grid-snapping logic</li>
+          <li>Separated resource harvesting logic from building logic</li>
+          <li>Replaced manual if-statements for stamina/health with proper clamping (0–100)</li>
+          <li>Reduced unnecessary work performed every frame</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Learning & Reflection</h3>
+        <p>The key lesson was the importance of separation of concerns. Functions such as Tick() and FindObject() were doing too much. Breaking them into smaller, focused functions improved readability and maintainability. A major challenge was ensuring changes remained compatible with existing classes and blueprints while still making the code more maintainable.</p>
+      </div>
+
+      <div class="card">
+        <h3>Course Outcomes Demonstrated</h3>
+        <ul class="check-list">
+          <li>Outcome 3 – Algorithmic principles and efficient implementation</li>
+          <li>Outcome 4 – Software engineering and design (modularity, maintainability, clean code)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Matthew Bridegroom • Southern New Hampshire University • CS-499 Capstone</p>
+    </div>
+  </footer>
+
+</body>
+</html>
