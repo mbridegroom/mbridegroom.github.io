@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS-360 DatabaseHelper | Matthew Bridegroom</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
 
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">Matthew <span>Bridegroom</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../self-assessment.html">Self-Assessment</a></li>
+        <li><a href="../artifacts.html" class="active">Artifacts</a></li>
+        <li><a href="../code-review.html">Code Review</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container">
+      <div class="course text-gold mb-1">CS-360 • Mobile Architecture & Programming</div>
+      <h1 class="section-title">DatabaseHelper.java</h1>
+      <p class="text-muted mb-4">Core SQLite database helper for an Android calendar/events application. Original created during earlier mobile coursework; significantly enhanced in August 2026 for CS-499.</p>
+
+      <!-- Overview -->
+      <div class="card">
+        <h3>Project Overview</h3>
+        <p>This class is responsible for creating and managing the users and events tables, handling user authentication, and performing CRUD operations on calendar events. The original version stored passwords in plain text and lacked proper data integrity and resource management. The enhanced version is a secure, professional, and robust database layer.</p>
+      </div>
+
+      <!-- Software Design -->
+      <div class="card">
+        <h3>Software Design & Engineering</h3>
+        <ul class="improvement-list">
+          <li>Refactored into a cleaner, more maintainable structure</li>
+          <li>Added comprehensive exception handling and logging</li>
+          <li>Centralized validation and resource management</li>
+          <li>Follows defensive programming and production-ready patterns</li>
+        </ul>
+      </div>
+
+      <!-- Security -->
+      <div class="card">
+        <h3>Security Improvements</h3>
+        <ul class="improvement-list">
+          <li>Original stored passwords in plain text</li>
+          <li>Every password is now salted and hashed with SHA-256</li>
+          <li>If the database is compromised, passwords remain protected</li>
+          <li>Demonstrates a strong security-by-design mindset</li>
+        </ul>
+      </div>
+
+      <!-- Databases -->
+      <div class="card">
+        <h3>Database Enhancements</h3>
+        <ul class="improvement-list">
+          <li>Added foreign-key relationships between events and users</li>
+          <li>Added ON DELETE CASCADE for data integrity</li>
+          <li>Added indexes for faster queries by username and datetime</li>
+          <li>Schema is now more professional and production-ready</li>
+        </ul>
+      </div>
+
+      <!-- Resource Management & Validation -->
+      <div class="card">
+        <h3>Resource Management & Input Validation</h3>
+        <ul class="improvement-list">
+          <li>Original code often left Cursors open</li>
+          <li>Every Cursor is now safely closed in a finally block</li>
+          <li>Validates length and nulls before touching the database</li>
+          <li>Prevents common Android database crashes and leaks</li>
+        </ul>
+      </div>
+
+      <!-- Learning -->
+      <div class="card">
+        <h3>Learning & Reflection</h3>
+        <p>Working on this enhancement reinforced the importance of security by design. Small intentional changes—adding salt and hashing, enabling foreign keys, proper resource cleanup—dramatically raised the quality and professionalism of the database code. The main challenge was migrating from a plain-text password schema to a salted-hash approach without breaking existing authentication logic.</p>
+      </div>
+
+      <!-- Outcomes -->
+      <div class="card">
+        <h3>Course Outcomes Demonstrated</h3>
+        <ul class="check-list">
+          <li>Secure database design</li>
+          <li>Proper data-access patterns</li>
+          <li>Application of software engineering best practices</li>
+          <li>Development of a security mindset</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Matthew Bridegroom • Southern New Hampshire University • CS-499 Capstone</p>
+    </div>
+  </footer>
+
+</body>
+</html>
