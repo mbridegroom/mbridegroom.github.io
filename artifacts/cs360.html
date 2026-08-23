@@ -27,73 +27,77 @@
     <div class="container">
       <div class="course text-gold mb-1">CS-360 • Mobile Architecture & Programming</div>
       <h1 class="section-title">DatabaseHelper.java</h1>
-      <p class="text-muted mb-4">Core SQLite database helper for an Android calendar/events application. Original created during earlier mobile coursework; significantly enhanced in August 2026 for CS-499.</p>
+      <p class="text-muted mb-4">
+        This artifact is the DatabaseHelper.java file from my final CS-360 Android project. It is the core SQLite database helper class responsible for creating and managing the users and events tables, handling user authentication, and performing CRUD operations on calendar events. The original version was created during earlier mobile development coursework. The enhanced version was significantly refactored and improved in August 2026 as part of CS-499.
+      </p>
 
-      <!-- Code Files Section -->
+      <!-- Code Files -->
       <div class="card">
         <h3>Original & Enhanced Code</h3>
-        <p class="text-muted mb-3">Download or view the full source files used in this artifact.</p>
+        <p class="text-muted mb-3">View or download the full source files.</p>
         <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
           <a href="../files/cs360/DatabaseHelper-Original.java" class="btn" target="_blank">View Original Code</a>
           <a href="../files/cs360/DatabaseHelper-Enhanced.java" class="btn" target="_blank">View Enhanced Code</a>
         </div>
       </div>
 
+      <!-- Justification -->
       <div class="card">
-        <h3>Project Overview</h3>
-        <p>This class is responsible for creating and managing the users and events tables, handling user authentication, and performing CRUD operations on calendar events. The original version stored passwords in plain text and lacked proper data integrity and resource management. The enhanced version is a secure, professional, and robust database layer.</p>
+        <h3>Why This Artifact Was Selected</h3>
+        <p>
+          I selected this artifact because it demonstrates my growth as a software developer. It started as a functional but basic SQLite helper class that stored passwords in plain text and lacked proper data integrity and resource management. The enhanced version was refactored into a more secure, professional, and robust database layer. Specific components that showcase my skills include salted SHA-256 password hashing, foreign key constraints with cascading deletes, input validation, indexes, and timestamps.
+        </p>
       </div>
 
+      <!-- Key Improvements from your document -->
       <div class="card">
-        <h3>Software Design & Engineering</h3>
-        <ul class="improvement-list">
-          <li>Refactored into a cleaner, more maintainable structure</li>
-          <li>Added comprehensive exception handling and logging</li>
-          <li>Centralized validation and resource management</li>
-          <li>Follows defensive programming and production-ready patterns</li>
-        </ul>
-      </div>
+        <h3>Key Code Improvements</h3>
 
-      <div class="card">
-        <h3>Security Improvements</h3>
+        <h4 class="text-gold mb-2">Secure Password Hashing</h4>
         <ul class="improvement-list">
           <li>Original stored passwords in plain text</li>
-          <li>Every password is now salted and hashed with SHA-256</li>
+          <li>Now every password is salted and hashed with SHA-256</li>
           <li>If the database is compromised, passwords remain protected</li>
-          <li>Demonstrates a strong security-by-design mindset</li>
+          <li>Demonstrates a strong security mindset required in professional software</li>
         </ul>
-      </div>
 
-      <div class="card">
-        <h3>Database Enhancements</h3>
+        <h4 class="text-gold mb-2 mt-4">Improved Database Schema</h4>
         <ul class="improvement-list">
-          <li>Added foreign-key relationships between events and users</li>
+          <li>Added foreign key relationships between events and users</li>
           <li>Added ON DELETE CASCADE for data integrity</li>
-          <li>Added indexes for faster queries by username and datetime</li>
-          <li>Schema is now more professional and production-ready</li>
+          <li>Added an index for faster queries by username and datetime</li>
+          <li>Schema is now more professional and production ready</li>
         </ul>
-      </div>
 
-      <div class="card">
-        <h3>Resource Management & Input Validation</h3>
+        <h4 class="text-gold mb-2 mt-4">Proper Resource Management</h4>
         <ul class="improvement-list">
           <li>Original code often left Cursors open</li>
-          <li>Every Cursor is now safely closed in a finally block</li>
-          <li>Validates length and nulls before touching the database</li>
+          <li>Now every Cursor is safely closed in a finally block</li>
+          <li>Added exception handling and logging</li>
           <li>Prevents common Android database crashes and leaks</li>
+        </ul>
+
+        <h4 class="text-gold mb-2 mt-4">Input Validation</h4>
+        <ul class="improvement-list">
+          <li>The original accepted any input</li>
+          <li>Now validates length and nulls before touching the database</li>
+          <li>Makes the API safer and reduces bad data in the tables</li>
+          <li>Follows defensive programming best practices</li>
         </ul>
       </div>
 
       <div class="card">
-        <h3>Learning & Reflection</h3>
-        <p>Working on this enhancement reinforced the importance of security by design. Small intentional changes—adding salt and hashing, enabling foreign keys, proper resource cleanup—dramatically raised the quality and professionalism of the database code. The main challenge was migrating from a plain-text password schema to a salted-hash approach without breaking existing authentication logic.</p>
+        <h3>Reflection</h3>
+        <p>
+          Working on enhancing and refactoring this artifact was a valuable learning experience. It helped me learn the importance of security by design and how relatively small but intentional changes (adding salt and hashing, enabling foreign keys) can dramatically raise the quality and professionalism of database code. One of the main challenges was migrating from a plain-text password schema to a salted hash approach without breaking the existing authentication logic.
+        </p>
       </div>
 
       <div class="card">
         <h3>Course Outcomes Demonstrated</h3>
         <ul class="check-list">
           <li>Secure database design</li>
-          <li>Proper data-access patterns</li>
+          <li>Proper data access patterns</li>
           <li>Application of software engineering best practices</li>
           <li>Development of a security mindset</li>
         </ul>
@@ -108,5 +112,6 @@
   </footer>
 
 </body>
+</html>
 </html>
 </html>
