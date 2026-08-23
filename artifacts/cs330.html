@@ -27,12 +27,14 @@
     <div class="container">
       <div class="course text-gold mb-1">CS-330 • Computational Graphics and Visualization</div>
       <h1 class="section-title">SceneManager.cpp</h1>
-      <p class="text-muted mb-4">Core class responsible for loading textures, defining materials, setting up lighting, and rendering a complete 3D scene. Original created November 2023; significantly refactored in August 2026 for CS-499.</p>
+      <p class="text-muted mb-4">
+        This artifact is the SceneManager.cpp file from my 3D graphics project. It is the core class responsible for loading textures, defining materials, setting up lighting, and rendering an entire 3D scene composed of basic meshes. The original version was created in November 2023 for CS-330. The enhanced version was significantly refactored and improved in August 2026 as part of CS-499.
+      </p>
 
-      <!-- Code Files Section -->
+      <!-- Code Files -->
       <div class="card">
         <h3>Original & Enhanced Code</h3>
-        <p class="text-muted mb-3">Download or view the full source files used in this artifact.</p>
+        <p class="text-muted mb-3">View or download the full source files.</p>
         <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
           <a href="../files/cs330/SceneManager-Original.cpp" class="btn" target="_blank">View Original Code</a>
           <a href="../files/cs330/SceneManager-Enhanced.cpp" class="btn" target="_blank">View Enhanced Code</a>
@@ -40,33 +42,53 @@
       </div>
 
       <div class="card">
-        <h3>Project Overview</h3>
-        <p>The original implementation contained over 350 lines of repetitive transformation, texture, material, and draw calls inside the RenderScene function. The enhanced version uses a data-driven approach that reduces duplication while preserving visual quality and making the system far easier to modify and extend.</p>
+        <h3>Why This Artifact Was Selected</h3>
+        <p>
+          I selected this artifact because it demonstrates my growth as a software developer. It started as a functional but repetitive and hardcoded implementation from an introductory graphics course and was refactored into a more professional and scalable system. The original version had over 350 lines of repetitive transformation, texture, material, and draw calls. The refactored version uses a data-driven approach that reduces code duplication while preserving visual quality.
+        </p>
       </div>
 
       <div class="card">
-        <h3>Software Design & Engineering</h3>
+        <h3>Key Code Improvements</h3>
+
+        <h4 class="text-gold mb-2">Scene Object Data Structure</h4>
         <ul class="improvement-list">
-          <li>Transformed hardcoded repetitive code into clean structured data</li>
+          <li>Turned the hardcoded repetitive code into clean, structured data</li>
           <li>Made the entire scene configurable and readable</li>
-          <li>Easier modification without touching rendering logic</li>
-          <li>Strong foundation for future features</li>
+          <li>Made it easier to modify without touching rendering logic</li>
+          <li>Better foundation for future features</li>
         </ul>
-      </div>
 
-      <div class="card">
-        <h3>Algorithms & Data Structures</h3>
+        <h4 class="text-gold mb-2 mt-4">Dynamic Object Creation</h4>
         <ul class="improvement-list">
-          <li>Replaced 6 nearly identical code blocks (80+ lines) with compact data</li>
-          <li>Dynamic object creation – adding/removing objects requires almost no extra code</li>
-          <li>Data-driven render loop reduced RenderScene from ~350 lines to ~8 lines</li>
-          <li>Texture lookup changed from O(n) linear search to O(1) hashmap lookup</li>
+          <li>Replaced 6 nearly identical code blocks (80+ lines) with clean, compact data</li>
+          <li>Easier to add and remove objects or adjust positions/rotations</li>
+          <li>Centralized the data to make the intent very clear</li>
+          <li>More scalable — changes to multiple objects require almost no extra code</li>
+        </ul>
+
+        <h4 class="text-gold mb-2 mt-4">Data Driven Render Loop</h4>
+        <ul class="improvement-list">
+          <li>Reduced the RenderScene function from ~350 lines to ~8 lines</li>
+          <li>Single source for rendering logic</li>
+          <li>Much easier to maintain and debug</li>
+          <li>Better enables future optimization work</li>
+        </ul>
+
+        <h4 class="text-gold mb-2 mt-4">O(1) Texture System</h4>
+        <ul class="improvement-list">
+          <li>Changed texture lookup from slow linear search O(n) to faster hashmap lookup O(1)</li>
+          <li>Cleaner C++</li>
+          <li>Better performance when there are many objects and textures</li>
+          <li>Less error prone than manual array indexing</li>
         </ul>
       </div>
 
       <div class="card">
-        <h3>Learning & Reflection</h3>
-        <p>This enhancement highlighted the power of data-driven design. Shifting from hardcoded logic to structured data dramatically improved flexibility and maintainability. The main challenge was refactoring the complex RenderScene function without breaking visual output or the precise positioning and rotation of scene elements (especially the rocket, tower, and legs).</p>
+        <h3>Reflection</h3>
+        <p>
+          Enhancing this artifact was a valuable learning experience. I learned the importance of data-driven design and how shifting from hardcoded logic to structured data can dramatically improve code flexibility and maintainability. One of the main challenges was refactoring the complex RenderScene function without breaking the visual output and preserving the precise positioning and rotation of all scene elements (especially the rocket, tower, and legs). It took several iterations to achieve both cleanliness and visual fidelity.
+        </p>
       </div>
 
       <div class="card">
@@ -74,8 +96,8 @@
         <ul class="check-list">
           <li>Application of advanced data structures</li>
           <li>Implementation of software design best practices</li>
-          <li>Code refactoring and clean, maintainable code</li>
-          <li>Graphics programming proficiency</li>
+          <li>Code refactoring and creation of clean, maintainable code</li>
+          <li>Graphics programming</li>
         </ul>
       </div>
     </div>
@@ -87,5 +109,7 @@
     </div>
   </footer>
 
+</body>
+</html>
 </body>
 </html>
